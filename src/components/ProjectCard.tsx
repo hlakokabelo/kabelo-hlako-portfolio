@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: Props) {
         </div>
       </div>
 
-      <p className="text-sm text-slate-400 leading-relaxed mb-5 flex-grow">
+      <p className="text-sm text-slate-400 leading-relaxed mb-5 grow">
         {project.description}
       </p>
 
