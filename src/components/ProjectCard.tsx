@@ -3,6 +3,8 @@ import type { Project } from "../data/projects";
 type Props = { project: Project };
 
 export default function ProjectCard({ project }: Props) {
+  if (!project.featured) return;
+
   return (
     <article className="group border border-slate-800 hover:border-slate-700 rounded-xl p-6 bg-slate-900/30 hover:bg-slate-900/60 transition-all flex flex-col">
       <div className="flex items-start justify-between gap-4 mb-3">

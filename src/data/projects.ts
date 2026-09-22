@@ -51,6 +51,7 @@ export const projects: Project[] = [
       "A RESTful API for managing movie data with authentication, validation, search, and filtering. Built with Node.js and Express using Prisma for data modelling and PostgreSQL for persistent storage, with structured JSON responses and a clean project architecture.",
     stack: ["Node.js", "Express", "PostgreSQL", "Prisma", "REST API"],
     source: "https://github.com/hlakokabelo/movie-list-api",
+    live: "https://movie-list-api-z4dh.onrender.com/api",
     featured: true,
   },
   {
@@ -60,7 +61,8 @@ export const projects: Project[] = [
       "A React and TypeScript application that generates targeted job-search URLs across major South African employment platforms. Handles input parsing, deduplication, URL encoding, platform-specific queries, and persistent search settings stored in the browser.",
     stack: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     source: "https://github.com/hlakokabelo/JobScout",
-    live: "https://jobscout-sa.vercel.app",
+    live: "https://jobscout-za.vercel.app",
+    featured: true,
   },
   {
     name: "Vitest Practice",
@@ -76,6 +78,8 @@ export const projects: Project[] = [
       "jsdom",
     ],
     source: "https://github.com/hlakokabelo/Vitest-Practice",
+    featured: true,
+    live: "https://vitest-practice-two.vercel.app",
   },
   {
     name: "SYNAT Tutors",
@@ -84,5 +88,6 @@ export const projects: Project[] = [
       "A cross-platform mobile and web application built as a university group project. Contributed features for accessing courses, assignments, and academic content, and collaborated with the team to deliver a functional learning platform.",
     stack: ["Cross-platform mobile/web"],
     source: "https://github.com/hlakokabelo",
+    featured: false,
   },
 ];

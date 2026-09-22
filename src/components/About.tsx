@@ -29,7 +29,7 @@ export default function About() {
             programming practicals, provided feedback, and helped students
             diagnose problems in their code. That role also made me better at
             reading code, spotting problems, and explaining technical ideas
-            clearly.”
+            clearly.
           </p>
 
           <p>
