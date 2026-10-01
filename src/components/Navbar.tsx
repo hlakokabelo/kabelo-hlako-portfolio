@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react";
+import {
+  FaUser,
+  FaCode,
+  FaTools,
+  FaGraduationCap,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#education", label: "Education" },
-  { href: "#contact", label: "Contact" },
+  { href: "#about", label: "About", icon: FaUser },
+  { href: "#projects", label: "Projects", icon: FaCode },
+  { href: "#skills", label: "Skills", icon: FaTools },
+  { href: "#education", label: "Education", icon: FaGraduationCap },
+  { href: "#contact", label: "Contact", icon: FaEnvelope },
 ];
 
 export default function Navbar() {
@@ -13,43 +20,55 @@ export default function Navbar() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
+
     onScroll();
     window.addEventListener("scroll", onScroll);
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all ${
+      className={`fixed inset-x-0 top-0 z-50 transition-all ${
         scrolled
-          ? "bg-slate-950/80 backdrop-blur-md border-b border-slate-800/60"
+          ? "border-b border-slate-800/60 bg-slate-950/80 backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a
           href="#top"
-          className="font-mono text-sm text-white tracking-tight hover:text-accent transition-colors"
+          className="font-mono text-sm tracking-tight text-white transition-colors hover:text-accent"
         >
           kabelo<span className="text-accent">.</span>hlako
         </a>
-        <ul className="hidden md:flex items-center gap-8 text-sm">
-          {links.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                className="text-slate-400 hover:text-white transition-colors"
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
+
+        <ul className="flex items-center gap-5 text-sm">
+          {links.map((l) => {
+            const Icon = l.icon;
+
+            return (
+              <li key={l.href}>
+                <a
+                  href={l.href}
+                  aria-label={l.label}
+                  title={l.label}
+                  className="flex items-center gap-2 text-slate-400 transition-colors hover:text-white"
+                >
+                  <Icon className="text-lg" />
+                  <span className="hidden md:inline">{l.label}</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
+
         <a
           href="https://github.com/hlakokabelo"
           target="_blank"
           rel="noreferrer"
-          className="text-sm text-slate-400 hover:text-white transition-colors"
+          aria-label="Visit my GitHub profile"
+          className="hidden text-sm text-slate-400 transition-colors hover:text-white sm:inline"
         >
           GitHub ↗
         </a>

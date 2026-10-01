@@ -9,7 +9,8 @@ export default function About() {
       <div className="grid gap-12 md:grid-cols-3">
         <div className="space-y-5 leading-relaxed text-slate-300 md:col-span-2">
           <p>
-            I'm a developer based in Boksburg, South Africa, focused on
+            I'm a developer based in Boksburg, South Africa, with an interest in
+            software development, backend systems, cloud technologies, and
             full-stack web development. I work primarily with React, TypeScript,
             Node.js, Express, and SQL databases, and I hold the Microsoft
             Certified: Azure Developer Associate (AZ-204) certification.
@@ -19,8 +20,8 @@ export default function About() {
             I've built and deployed several projects, including a Reddit-like
             social platform, a full-stack URL shortener, a REST API for movie
             data, and a job-search utility. Working on these projects has meant
-            dealing with frontend and backend code, authentication, databases,
-            testing, and deployment
+            dealing with frontend and backend development, authentication,
+            databases, testing, APIs, and deployment.
           </p>
 
           <p>
@@ -33,9 +34,12 @@ export default function About() {
           </p>
 
           <p>
-            I'm currently seeking junior software development opportunities
-            where I can contribute to production software, grow as an engineer,
-            and learn from experienced developers.
+            I'm currently looking for junior opportunities in software
+            development, backend development, full-stack development, cloud, and
+            database-related roles. I'm open to different paths within software
+            and cloud, especially roles where I can put what I've learned into
+            practice, keep improving, and gain experience working on real-world
+            systems.{" "}
           </p>
         </div>
 
@@ -43,14 +47,16 @@ export default function About() {
           <div className="rounded-lg border border-slate-800 bg-slate-900/40 p-5">
             <p className="mb-2 font-mono text-xs text-accent">Currently</p>
             <p className="text-sm text-slate-300">
-              Building personal projects and deepening my full-stack skills.
+              Building personal projects and expanding my software, cloud, and
+              testing skills.
             </p>
           </div>
 
           <div className="rounded-lg border border-slate-800 bg-slate-900/40 p-5">
             <p className="mb-2 font-mono text-xs text-accent">Focus</p>
             <p className="text-sm text-slate-300">
-              React, TypeScript, Node.js, Express, PostgreSQL, and Azure.
+              React, TypeScript, Node.js, Express, PostgreSQL, REST APIs, and
+              Azure.
             </p>
           </div>
 

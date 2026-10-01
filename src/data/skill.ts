@@ -14,7 +14,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs", "JWT"],
+    items: ["Node.js", "Express.js", "REST APIs", "JWT Authentication"],
   },
   {
     label: "Databases",
@@ -38,6 +38,7 @@ export const skillGroups: SkillGroup[] = [
       "Azure Functions",
       "Azure Storage",
       "Azure App Service",
+      "Azure Container Apps",
     ],
   },
   {
@@ -46,6 +47,14 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Tools",
-    items: ["Git", "GitHub", "VS Code", "Eclipse", "npm"],
+    items: [
+      "Git",
+      "GitHub",
+      "GitHub Actions",
+      "VS Code",
+      "Eclipse",
+      "npm",
+      "Vite",
+    ],
   },
 ];
